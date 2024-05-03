@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [CreateAssetMenu(fileName ="SkinItem", menuName ="Shop/SkinItem")]
-public class Item : ScriptableObject
+public class ItemTEST : ScriptableObject
 {
     [field:SerializeField] public GameObject Model {  get; private set; }
     [field:SerializeField] public Sprite Image {  get; private set; }

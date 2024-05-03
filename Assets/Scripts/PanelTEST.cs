@@ -2,18 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Panel : MonoBehaviour
+public class PanelTEST : MonoBehaviour
 {
-    private List<ItemView> items = new List<ItemView>();
-    [SerializeField] private ItemView itemPrefab;
+    private List<ItemViewTEST> items = new List<ItemViewTEST>();
+    [SerializeField] private ItemViewTEST itemPrefab;
     [SerializeField] private Transform itemsParent;
 
-    public void Show(IEnumerable<Item> items)
+    public void Show(IEnumerable<ItemTEST> items)
     {
         Clear();
-        foreach (Item item in items)
+        foreach (ItemTEST item in items)
         {
-            ItemView spawnedItem = Instantiate(itemPrefab, itemsParent);
+            ItemViewTEST spawnedItem = Instantiate(itemPrefab, itemsParent);
             spawnedItem.Initialize(item);
             spawnedItem.Click += OnSpawnedItem_Click;
 
@@ -21,7 +21,7 @@ public class Panel : MonoBehaviour
         }
     }
 
-    private void OnSpawnedItem_Click(ItemView obj)
+    private void OnSpawnedItem_Click(ItemViewTEST obj)
     {
         if (obj.IsSelected)
         {
@@ -36,7 +36,7 @@ public class Panel : MonoBehaviour
 
     private void Clear()
     {
-        foreach(ItemView item in items)
+        foreach(ItemViewTEST item in items)
         {
             item.Click-=OnSpawnedItem_Click;
             Destroy(item.gameObject);

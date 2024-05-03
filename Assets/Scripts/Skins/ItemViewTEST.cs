@@ -5,9 +5,9 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class ItemView : MonoBehaviour, IPointerClickHandler
+public class ItemViewTEST : MonoBehaviour, IPointerClickHandler
 {
-    public event Action<ItemView> Click;
+    public event Action<ItemViewTEST> Click;
 
 
 
@@ -17,13 +17,13 @@ public class ItemView : MonoBehaviour, IPointerClickHandler
 
     [SerializeField] private TextMeshProUGUI Text;
 
-    public Item Item { get; private set; }
+    public ItemTEST Item { get; private set; }
 
     public GameObject Model => Item.Model;
 
     public bool IsSelected = false;
 
-    public void Initialize(Item item)
+    public void Initialize(ItemTEST item)
     {
        
         Item = item;

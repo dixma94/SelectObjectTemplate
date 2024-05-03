@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 [CreateAssetMenu(fileName = "Content", menuName = "Shop/Content")]
 
-public class Content : ScriptableObject
+public class ContenåTEST : ScriptableObject
 {
-    [SerializeField] private List<Item> items;
+    [SerializeField] private List<ItemTEST> items;
 
-    public IEnumerable<Item> Items => items;
+    public IEnumerable<ItemTEST> Items => items;
 }
