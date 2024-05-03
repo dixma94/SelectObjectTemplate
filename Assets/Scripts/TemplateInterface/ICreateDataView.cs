@@ -2,5 +2,5 @@
 
 public interface ICreateDataView<T> where T : IData
 {
-    public IInitData<T> Create(T data);
+    public IInitDataView<T> Create(T data);
 }

@@ -31,7 +31,12 @@ public class CPanel : MonoBehaviour, IShowData<CData>
             cDataView.Init(item);
             cDataView.transform.parent = parent;
             cDataView.transform.localScale = new Vector3(1, 1, 1);
+            cDataView.Selected += CDataView_Selected;
 
         }
     }
+    private void CDataView_Selected(ISelectable dataView)
+    {
+        dataView.Select();
+    }   
 }
