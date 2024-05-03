@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7236e87cf0ca11d4a9836eb301063767, type: 3}
+  m_Script: {fileID: 11500000, guid: aa262aa7505578d4f968e0a336511321, type: 3}
   m_Name: SkinItem 3
   m_EditorClassIdentifier: 
   <Model>k__BackingField: {fileID: 338817747502304451, guid: 3c6b5545f0f405b469d7ac8b873aa8dc, type: 3}
