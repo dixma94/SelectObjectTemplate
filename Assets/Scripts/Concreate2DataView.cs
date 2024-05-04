@@ -1,16 +1,13 @@
-﻿using System;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class CDataView : MonoBehaviour, IInitDataView<CData>, IPointerClickHandler, ISelectable
+public class Concreate2DataView : AbstractDataView<ConcreateData>, IPointerClickHandler
 {
     [SerializeField] TextMeshProUGUI Text;
     [SerializeField] TextMeshProUGUI Description;
 
-    public event Action<ISelectable> Selected;
-
-    public void Init(CData data)
+    public override void Init(ConcreateData data)
     {
         Text.text = data.Name;
         Description.text = data.Description;
@@ -19,10 +16,10 @@ public class CDataView : MonoBehaviour, IInitDataView<CData>, IPointerClickHandl
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        Selected?.Invoke(this);
+        OnSelected();
     }
 
-    public void Select()
+    public override void Select()
     {
         Description.gameObject.SetActive(true);
     }
