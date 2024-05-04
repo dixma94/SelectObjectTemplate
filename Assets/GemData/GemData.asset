@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22bbc9a7e096db148b7297abf2ecde42, type: 3}
+  m_Name: GemData
+  m_EditorClassIdentifier: 
+  Name: RedRyby
+  Level: 15
+  Prefab: {fileID: 1638277548408129303, guid: bdb319731d0cd9147a1a5f1e706dfd24, type: 3}
+  sprite: {fileID: -882047444, guid: cdc1b860a097e0d429dfb89cefdb2109, type: 3}
+  id: 1
