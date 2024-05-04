@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Star
   m_EditorClassIdentifier: 
   Name: Star
-  Description: Yellow Star 14 gold Cost
+  Level: 5
   Prefab: {fileID: 4381183834735267530, guid: 07eeea3cb954e3344ae58f24bcbe4a37, type: 3}
   sprite: {fileID: 237261441, guid: cdc1b860a097e0d429dfb89cefdb2109, type: 3}
   id: 3

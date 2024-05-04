@@ -20,6 +20,6 @@ public class GemSelectedDataView : MonoBehaviour
         model = Instantiate(gemData.Prefab, prefabPostition);
         gameObject.SetActive(true);
         Name.text = gemData.Name;
-        Description.text = gemData.Description;
+        Description.text = "Level: " + gemData.Level.ToString();
     }
 }

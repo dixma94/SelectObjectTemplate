@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: GemData
   m_EditorClassIdentifier: 
   Name: RedRyby
-  Description: Red Ryby 12 gold cost
+  Level: 15
   Prefab: {fileID: 1638277548408129303, guid: bdb319731d0cd9147a1a5f1e706dfd24, type: 3}
   sprite: {fileID: -882047444, guid: cdc1b860a097e0d429dfb89cefdb2109, type: 3}
   id: 1
