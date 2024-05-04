@@ -3,4 +3,5 @@
 public interface IDataProvider<T> where T : IData
 {
     IEnumerable<T> GetData();
+    T GetData(int id);
 }

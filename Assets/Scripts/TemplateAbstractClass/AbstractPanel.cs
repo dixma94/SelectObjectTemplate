@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 public abstract class AbstractPanel<T> : MonoBehaviour, IShowData<T>
     where T : IData
@@ -6,25 +7,28 @@ public abstract class AbstractPanel<T> : MonoBehaviour, IShowData<T>
     [SerializeField] protected AbstractFactory<T> factory;
     [SerializeField] protected Transform parent;
 
+    protected List<AbstractDataView<T>> dataViewList = new List<AbstractDataView<T>>();
+
     public ICreateDataView<T> GetFactory()
     {
         return factory;
     }
 
-    public void Show(IDataProvider<T> dataProvider)
+    public virtual void Show(IDataProvider<T> dataProvider)
     {
         foreach (T item in dataProvider.GetData())
         {
             AbstractDataView<T> dataView = GetFactory().Create(item) as AbstractDataView<T>;
+            dataViewList.Add(dataView);
             dataView.Init(item);
             dataView.transform.parent = parent;
             dataView.transform.localScale = new Vector3(1, 1, 1);
-            dataView.Selected += DataView_Selected;
+            dataView.Selected += OnDataViewSelected;
 
         }
     }
 
-    private void DataView_Selected(IDataView<T> dataView)
+    public virtual void OnDataViewSelected(IDataView<T> dataView)
     {
         dataView.Select();
     }

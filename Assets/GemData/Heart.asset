@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22bbc9a7e096db148b7297abf2ecde42, type: 3}
+  m_Name: Heart
+  m_EditorClassIdentifier: 
+  Name: heart
+  Description: Purple Heart 5 gold cost
+  Prefab: {fileID: 641891827575755380, guid: 8fd4b29d2a78fc14180248939816ae80, type: 3}
+  sprite: {fileID: 539357638, guid: cdc1b860a097e0d429dfb89cefdb2109, type: 3}
+  id: 2
