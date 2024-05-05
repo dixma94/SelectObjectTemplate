@@ -1,18 +1,26 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 
 public class LevelDataProvider : MonoBehaviour, IDataProvider<LevelData>
 {
-    public List<LevelData> data = new List<LevelData>();
-    public IEnumerable<LevelData> GetData()
+    public List<Asset> data = new List<Asset>();
+
+    public async IAsyncEnumerable<LevelData> GetData()
     {
-        return data;
+        foreach (var asset in data)
+        {
+            LevelData gemData = await asset.data.LoadAssetAsync<LevelData>().Task;
+            gemData.Id_Additional = asset.dataAdditional.AssetGUID;
+            yield return gemData;
+        }
     }
 
-    public LevelData GetData(int id)
+    public Task<LevelDataAdditional> GetData(string assetGUID)
     {
-        LevelData dataItem = data.Where(x => x.Id == id).First();
-        return dataItem;
+        return Addressables.LoadAssetAsync<LevelDataAdditional>(assetGUID).Task;
     }
+
 }

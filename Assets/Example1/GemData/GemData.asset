@@ -12,8 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22bbc9a7e096db148b7297abf2ecde42, type: 3}
   m_Name: GemData
   m_EditorClassIdentifier: 
-  Name: RedRyby
-  Level: 15
-  Prefab: {fileID: 1638277548408129303, guid: bdb319731d0cd9147a1a5f1e706dfd24, type: 3}
+  Name: Ryby
   sprite: {fileID: -882047444, guid: cdc1b860a097e0d429dfb89cefdb2109, type: 3}
-  id: 1

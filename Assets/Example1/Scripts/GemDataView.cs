@@ -9,13 +9,11 @@ public class GemDataView : AbstractDataView<GemData>, IPointerClickHandler
     [SerializeField] Image sprite;
     [SerializeField] Image SelectorImage;
 
-
-    private int id;
-    public override int ID { get => id; set => id = value; }
+    public override string Id { get ; set ; }
 
     public override void Init(GemData data)
     {
-        ID = data.Id;
+        Id = data.Id_Additional;
         Name.text = data.Name;
         sprite.sprite = data.sprite;
         SelectorImage.gameObject.SetActive(false);

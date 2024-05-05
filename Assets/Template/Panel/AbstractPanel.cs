@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public abstract class AbstractPanel<T> : MonoBehaviour, IShowData<T>
@@ -14,9 +15,9 @@ public abstract class AbstractPanel<T> : MonoBehaviour, IShowData<T>
         return factory;
     }
 
-    public virtual void Show(IDataProvider<T> dataProvider)
+    public async virtual void Show(IDataProvider<T> dataProvider)
     {
-        foreach (T item in dataProvider.GetData())
+        await foreach (T item in dataProvider.GetData())
         {
             AbstractDataView<T> dataView = GetFactory().Create(item) as AbstractDataView<T>;
             dataViewList.Add(dataView);
@@ -24,7 +25,6 @@ public abstract class AbstractPanel<T> : MonoBehaviour, IShowData<T>
             dataView.transform.parent = parent;
             dataView.transform.localScale = new Vector3(1, 1, 1);
             dataView.Selected += OnDataViewSelected;
-
         }
     }
 
@@ -33,5 +33,5 @@ public abstract class AbstractPanel<T> : MonoBehaviour, IShowData<T>
         dataView.Select();
     }
 
-  
+
 }

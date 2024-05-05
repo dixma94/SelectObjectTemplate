@@ -13,7 +13,7 @@ public class LevelSelectedView : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    public void Show(LevelData levelData)
+    public void Show(LevelDataAdditional levelData)
     {
         gameObject.SetActive(true);
         Name.text = levelData.Name;

@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+using UnityEngine.AddressableAssets;
 
 public interface IDataProvider<T> where T : IData
 {
-    IEnumerable<T> GetData();
-    T GetData(int id);
+    IAsyncEnumerable<T> GetData();
 }
