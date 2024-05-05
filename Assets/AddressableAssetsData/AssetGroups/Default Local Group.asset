@@ -41,6 +41,30 @@ MonoBehaviour:
     m_Address: Assets/Example1/GemData/HeartAdd.asset
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: e55fcb090b55b5749ae22723763cac6e
+    m_Address: Assets/Example2/LevelData/LevelData.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 07d2b844051ee3f46ac4602e093c94dc
+    m_Address: Assets/Example2/LevelData/LevelDataAdditional.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: cc09a69b901a65340919113177fed231
+    m_Address: Assets/Example2/LevelData/WhiteCastle.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4226b34624335f345835a150a4abe509
+    m_Address: Assets/Example2/LevelData/WhiteCastleAdd.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4e620e262b0fd824999aba4c019d27b6
+    m_Address: Assets/Example2/LevelData/Arena.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0872f76baef8cdb45a35b9ac6978b2a4
+    m_Address: Assets/Example2/LevelData/LevelDataAdditional.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: f15d32b8277c8ec49a775a33832a5fe8, type: 2}
   m_SchemaSet:

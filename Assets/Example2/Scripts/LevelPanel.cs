@@ -17,7 +17,7 @@ public class LevelPanel : AbstractPanel<LevelData>
             item.UnSelect();
         }
         dataView.Select();
-       LevelData levelData =  LevelsDataProvider.GetData(dataView.Id);
+        LevelDataAdditional levelData =  await LevelsDataProvider.GetData(dataView.Id);
         SelectedDataView.Show(levelData);
 
     }

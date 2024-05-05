@@ -9,10 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26eee9b26ddd55c4ab5de3189e75a2a8, type: 3}
-  m_Name: Level 2
+  m_Script: {fileID: 11500000, guid: 57061967245c49341b2b9f1db4cf05a8, type: 3}
+  m_Name: WhiteCastleAdd
   m_EditorClassIdentifier: 
-  id: 2
-  Name: White Castle
-  Description: Custom map for one player
+  Name: WhiteCastle
+  Description: Map for one player
   Sprite: {fileID: 21300000, guid: 9549c40a1d9a2c34ba4530cd576d777c, type: 3}

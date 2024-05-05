@@ -6,15 +6,21 @@ using UnityEngine.AddressableAssets;
 
 public class LevelDataProvider : MonoBehaviour, IDataProvider<LevelData>
 {
-    public LevelData GetData(string assetGUID)
+    public List<Asset> data = new List<Asset>();
+
+    public async IAsyncEnumerable<LevelData> GetData()
     {
-        throw new System.NotImplementedException();
+        foreach (var asset in data)
+        {
+            LevelData gemData = await asset.data.LoadAssetAsync<LevelData>().Task;
+            gemData.Id_Additional = asset.dataAdditional.AssetGUID;
+            yield return gemData;
+        }
     }
 
-    IAsyncEnumerable<LevelData> IDataProvider<LevelData>.GetData()
+    public Task<LevelDataAdditional> GetData(string assetGUID)
     {
-        throw new System.NotImplementedException();
+        return Addressables.LoadAssetAsync<LevelDataAdditional>(assetGUID).Task;
     }
 
- 
 }

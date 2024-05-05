@@ -394,9 +394,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data:
-  - {fileID: 11400000, guid: 2cae0cdd2ff7d5d4d807dbc338e52604, type: 2}
-  - {fileID: 11400000, guid: 466ecbaa7f0d0154dad2f03338db9424, type: 2}
-  - {fileID: 11400000, guid: 3e0dadf4ba8277c4481d6a7eef446998, type: 2}
+  - data:
+      m_AssetGUID: 4e620e262b0fd824999aba4c019d27b6
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+    dataAdditional:
+      m_AssetGUID: 0872f76baef8cdb45a35b9ac6978b2a4
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - data:
+      m_AssetGUID: e55fcb090b55b5749ae22723763cac6e
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+    dataAdditional:
+      m_AssetGUID: 07d2b844051ee3f46ac4602e093c94dc
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - data:
+      m_AssetGUID: cc09a69b901a65340919113177fed231
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+    dataAdditional:
+      m_AssetGUID: 4226b34624335f345835a150a4abe509
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
 --- !u!4 &506419769
 Transform:
   m_ObjectHideFlags: 0

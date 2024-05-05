@@ -10,9 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 26eee9b26ddd55c4ab5de3189e75a2a8, type: 3}
-  m_Name: Level 3
+  m_Name: LongRiver
   m_EditorClassIdentifier: 
-  id: 3
-  Name: Death Match
-  Description: Map for 8 players 4x4
-  Sprite: {fileID: 21300000, guid: 672ed1af9aef8014eb62f1f75bc8497b, type: 3}
+  Name: Long RIver

@@ -7,7 +7,4 @@ public class LevelData :ScriptableObject, IData
 {
     public string Id_Additional { get;  set ; }
     public string Name;
-    public string Description;
-    public Sprite Sprite;
 }
-
