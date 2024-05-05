@@ -3,5 +3,6 @@
     public void Init(T data);
     public void Select();
     public void UnSelect();
-    public int ID {  get; set; }
+    public string Id {  get; set; }
+
 }

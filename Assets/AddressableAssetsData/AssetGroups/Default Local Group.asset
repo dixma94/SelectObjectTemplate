@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Default Local Group
+  m_Data:
+    m_SerializedData: []
+  m_GUID: c40cf335cf2ec29429e23010e1d712b0
+  m_SerializeEntries:
+  - m_GUID: 4620e649bd6565644bf80e37a2d92aeb
+    m_Address: Assets/Example1/GemData/GemDataAdditional.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1f33ddc3ec3155c4db1e83cba82563a1
+    m_Address: Assets/Example1/GemData/GemData.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4bca253b34aa49a45af6725db02eb537
+    m_Address: Assets/Example1/GemData/Star.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5c37da8d868941d43848a5a179034671
+    m_Address: Assets/Example1/GemData/StarAdd.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 64fa532afa1c41e42a67f65fe1b5fc32
+    m_Address: Assets/Example1/GemData/Heart.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f9abefcd695dbfe46b77f502b0f710ff
+    m_Address: Assets/Example1/GemData/HeartAdd.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: f15d32b8277c8ec49a775a33832a5fe8, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 77df67c5af500d24eb04d624e72a32f9, type: 2}
+    - {fileID: 11400000, guid: cf08d211e233f3b4b8d05864c05a98d9, type: 2}

@@ -4,8 +4,7 @@ using UnityEngine;
 public abstract class AbstractDataView<T> : MonoBehaviour, IDataView<T>
     where T : IData
 {
-    public abstract int ID { get; set; }
-
+    public abstract string Id { get; set; }
     public event Action<IDataView<T>> Selected;
 
     public abstract void Init(T data);

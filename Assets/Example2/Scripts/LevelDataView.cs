@@ -9,11 +9,11 @@ public class LevelDataView : AbstractDataView<LevelData>, IPointerClickHandler
     [SerializeField] TextMeshProUGUI Name;
     [SerializeField] Image SelectorImage;
 
-    public override int ID { get ; set ; }
+    public override string Id { get ; set ; }
 
     public override void Init(LevelData data)
     {
-        ID = data.Id;
+        Id = data.Id_Additional;
         Name.text = data.Name;
         SelectorImage.gameObject.SetActive(false);
     }

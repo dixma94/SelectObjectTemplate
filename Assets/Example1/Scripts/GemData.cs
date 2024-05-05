@@ -6,9 +6,6 @@ using UnityEngine.UI;
 public class GemData : ScriptableObject, IData
 {
     public string Name;
-    public int Level;
-    public GameObject Prefab;
     public Sprite sprite;
-    public int id;
-    public int Id {get=> id; set => id=value; }
+    public string Id_Additional { get; set; }
 }

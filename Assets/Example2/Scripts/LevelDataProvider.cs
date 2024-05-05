@@ -1,18 +1,20 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 
 public class LevelDataProvider : MonoBehaviour, IDataProvider<LevelData>
 {
-    public List<LevelData> data = new List<LevelData>();
-    public IEnumerable<LevelData> GetData()
+    public LevelData GetData(string assetGUID)
     {
-        return data;
+        throw new System.NotImplementedException();
     }
 
-    public LevelData GetData(int id)
+    IAsyncEnumerable<LevelData> IDataProvider<LevelData>.GetData()
     {
-        LevelData dataItem = data.Where(x => x.Id == id).First();
-        return dataItem;
+        throw new System.NotImplementedException();
     }
+
+ 
 }

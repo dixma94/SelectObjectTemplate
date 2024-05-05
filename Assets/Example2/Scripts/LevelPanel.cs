@@ -10,14 +10,15 @@ public class LevelPanel : AbstractPanel<LevelData>
         Show(LevelsDataProvider);
     }
 
-    public override void OnDataViewSelected(IDataView<LevelData> dataView)
+    public override async void OnDataViewSelected(IDataView<LevelData> dataView)
     {
         foreach (var item in dataViewList)
         {
             item.UnSelect();
         }
         dataView.Select();
-        SelectedDataView.Show(LevelsDataProvider.GetData(dataView.ID));
+       LevelData levelData =  LevelsDataProvider.GetData(dataView.Id);
+        SelectedDataView.Show(levelData);
 
     }
 

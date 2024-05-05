@@ -14,7 +14,7 @@ public class GemSelectedDataView : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    public void Show(GemData gemData)
+    public void Show(GemDataAdditional gemData)
     {
         Destroy(model);
         model = Instantiate(gemData.Prefab, prefabPostition);

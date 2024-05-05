@@ -13,7 +13,4 @@ MonoBehaviour:
   m_Name: Heart
   m_EditorClassIdentifier: 
   Name: Heart
-  Level: 80
-  Prefab: {fileID: 641891827575755380, guid: 8fd4b29d2a78fc14180248939816ae80, type: 3}
   sprite: {fileID: 539357638, guid: cdc1b860a097e0d429dfb89cefdb2109, type: 3}
-  id: 2

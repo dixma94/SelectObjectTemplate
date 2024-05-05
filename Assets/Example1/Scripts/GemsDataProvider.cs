@@ -1,18 +1,29 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
+using UnityEditor.VersionControl;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
+using UnityEngine.ResourceManagement.AsyncOperations;
 
 public class GemsDataProvider :MonoBehaviour, IDataProvider<GemData>
 {
-    public  List<GemData> data = new List<GemData>();
-    public IEnumerable<GemData> GetData()
+    
+    public  List<Asset> data = new List<Asset>();
+
+    public async IAsyncEnumerable<GemData> GetData()
     {
-        return data;
+        foreach (var asset in data)
+        {
+            GemData gemData = await asset.data.LoadAssetAsync<GemData>().Task;
+            gemData.Id_Additional = asset.dataAdditional.AssetGUID;
+            yield return gemData;
+        }
     }
 
-    public GemData GetData(int id)
+    public Task<GemDataAdditional> GetData(string assetGUID)
     {
-        GemData dataItem = data.Where(x => x.Id == id).First();
-        return dataItem;
+        return Addressables.LoadAssetAsync<GemDataAdditional>(assetGUID).Task;
     }
 }
